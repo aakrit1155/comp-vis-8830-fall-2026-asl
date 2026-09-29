@@ -2,6 +2,7 @@ import streamlit as st
 
 from assignment_02 import ui as assignment_02_ui
 from assignment_03 import ui as assignment_03_ui
+from assignment_04 import ui as assignment_04_ui
 from styles import inject_styles
 
 st.set_page_config(
@@ -37,8 +38,15 @@ ASSIGNMENTS = [
     {
         "id": "assignment_04",
         "name": "Module 04",
-        "desc": "Image Segmentation(In Progress)",
+        "desc": "Image Segmentation",
         "icon": "👀",
+        "active": True,
+    },
+    {
+        "id": "assignment_05",
+        "name": "Module 05, 06",
+        "desc": "Optical Flow(In Progress)",
+        "icon": "🚶‍➡️👉",
         "active": False,
     },
 ]
@@ -72,7 +80,7 @@ def show_hub():
     # ---------------------- Quick stats ----------------------
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Modules", "02", "CV pipeline")
-    c2.metric("Available Now", "02", "Assignment 03 live")
+    c2.metric("Available Now", "03", "Assignment 04 live")
     c3.metric("Focus", "Image → 3D, 2D", "Vision stack")
     c4.metric("Stack", "Python + CV", "OpenCV · NumPy")
 
@@ -169,3 +177,5 @@ elif st.session_state.active_assignment == "assignment_02":
     assignment_02_ui.render()
 elif st.session_state.active_assignment == "assignment_03":
     assignment_03_ui.render()
+elif st.session_state.active_assignment == "assignment_04":
+    assignment_04_ui.render()
