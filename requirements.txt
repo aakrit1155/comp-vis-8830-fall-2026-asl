@@ -1,6 +1,8 @@
 streamlit
 streamlit-image-coordinates
+Pillow
 opencv-python-headless
 numpy
 pandas
 matplotlib
+av==19.0.1
