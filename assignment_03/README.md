@@ -65,7 +65,7 @@ $$g(x, y) = (f * h)(x, y) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(\t
 
 Applying the 2D Continuous Fourier Transform $\mathcal{F}\{\cdot\}$, interchanging the order of integration via Fubini's Theorem, and applying the spatial shift substitution ($\alpha = x - \tau$, $\beta = y - \eta$) yields:
 
-$$\mathcal{F}\{f * h\}(u, v) = F(u, v) \cdot H(u, v) \quad \Longleftrightarrow \quad (f * h)(x, y) = \mathcal{F}^{-1}\left\{ F(u, v) \cdot H(u, v) \right\}$$
+$$\mathcal{F}\{f * h\}(u, v) = F(u, v) \cdot H(u, v) \quad \Longleftrightarrow \quad (f * h)(x, y) = \mathcal{F}^{-1}\left\\{ F(u, v) \cdot H(u, v) \right\\}$$
 
 
 ### 2. Discrete 2D Formulation & Zero-Padding Condition
