@@ -244,14 +244,14 @@ def render_boundary_thermal() -> None:
             "Apply Boundary Extraction",
             key="thermal_apply_btn",
             type="primary",
-            use_container_width=True,
+            width="stretch",
         )
     with btn_col2:
         st.button(
             "🔄 Reset",
             key="thermal_reset_btn",
             on_click=_reset_thermal_state,
-            use_container_width=True,
+            width="stretch",
         )
 
     if apply_clicked:

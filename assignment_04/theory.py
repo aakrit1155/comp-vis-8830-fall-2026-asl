@@ -199,10 +199,10 @@ def _render_fourier_demo() -> None:
             "Run Demo",
             key="theory_run_demo_btn",
             type="primary",
-            use_container_width=True,
+            width="stretch",
         )
     with b2:
-        if st.button("🔄 Reset", key="theory_reset_demo_btn", use_container_width=True):
+        if st.button("🔄 Reset", key="theory_reset_demo_btn", width="stretch"):
             st.session_state["theory_demo_active"] = False
             st.session_state.pop("theory_demo_results", None)
             st.rerun()

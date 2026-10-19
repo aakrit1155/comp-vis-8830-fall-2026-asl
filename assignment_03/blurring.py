@@ -241,14 +241,14 @@ def render_blurring() -> None:
             if st.button(
                 "✨ Apply Blurring Filters",
                 type="primary",
-                use_container_width=True,
+                width="stretch",
             ):
                 st.session_state["blur_applied"] = True
         with btn_col2:
             st.button(
                 "🔄 Reset",
                 on_click=_reset_blurring_state,
-                use_container_width=True,
+                width="stretch",
             )
 
         # Render 2-Column Comparison Grid once button is pressed

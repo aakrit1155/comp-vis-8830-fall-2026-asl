@@ -328,14 +328,14 @@ def render_boundary_rgb() -> None:
             "Apply Boundary Extraction",
             key="rgb_apply_btn",
             type="primary",
-            use_container_width=True,
+            width="stretch",
         )
     with btn_col2:
         st.button(
             "🔄 Reset",
             key="rgb_reset_btn",
             on_click=_reset_rgb_state,
-            use_container_width=True,
+            width="stretch",
         )
 
     # Segmentation executes ONLY when 'Apply Boundary Extraction' is clicked
