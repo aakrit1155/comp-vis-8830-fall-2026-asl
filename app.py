@@ -4,6 +4,7 @@ from assignment_02 import ui as assignment_02_ui
 from assignment_03 import ui as assignment_03_ui
 from assignment_04 import ui as assignment_04_ui
 from assignment_06 import ui as assignment_06_ui
+from assignment_07 import ui as assignment_07_ui
 from styles import inject_styles
 
 st.set_page_config(
@@ -50,6 +51,13 @@ ASSIGNMENTS = [
         "icon": "🚶‍➡️👉",
         "active": True,
     },
+    {
+        "id": "assignment_07",
+        "name": "Module 07",
+        "desc": "Stereo Vision ⚯",
+        "icon": "🔭👀",
+        "active": True,
+    },
 ]
 
 
@@ -80,8 +88,8 @@ def show_hub():
 
     # ---------------------- Quick stats ----------------------
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Modules", "06", "CV pipeline")
-    c2.metric("Available Now", "04", "Assignment 06 live")
+    c1.metric("Modules", "07", "CV pipeline")
+    c2.metric("Available Now", "05", "Assignment 07 live")
     c3.metric("Focus", "Image → 3D, 2D", "Vision stack")
     c4.metric("Stack", "Python + CV", "OpenCV · NumPy")
 
@@ -182,3 +190,5 @@ elif st.session_state.active_assignment == "assignment_04":
     assignment_04_ui.render()
 elif st.session_state.active_assignment == "assignment_06":
     assignment_06_ui.render()
+elif st.session_state.active_assignment == "assignment_07":
+    assignment_07_ui.render()
